@@ -1,0 +1,61 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+body{
+    background: url('../../images/main.png') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+a{
+    font-size:30px;
+}
+
+
+.maincontainer{
+    width: 90%;
+    margin: 1em auto;
+    padding: 4em 1em;
+    background: rgba(236, 240, 241, 0.85);
+
+    
+}
+
+.badge{
+    background: rgba(52, 152, 219, 1);
+}
+
+.add-comment{
+    background: rgba(46, 204, 113,1.0);
+    color: #fff;
+    padding: 0.2em 1em;
+    border-radius: 10em;
+    cursor: pointer;
+    font-size: 0.8em;
+}
+
+.glyphicon-plus{
+    font-size: 0.8em;
+}
+
+
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }

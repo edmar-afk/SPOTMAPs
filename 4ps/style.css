@@ -1,0 +1,333 @@
+/* Import CSS
+------------------------------------------------------------ */
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:300,400,700);
+
+/* Custom container width
+------------------------------------------------------------ */
+
+body {
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+}
+
+#site-wrapper {
+	width: 100%;
+	margin: 0 auto 25px auto;
+	background-color: #000;
+	padding-bottom: 48px;
+}
+
+html,body {
+	width: 100%;
+	height: 100%;
+}
+
+.container {
+	width: 1311px;
+}
+
+@media only screen and (max-width : 1311px ) {
+
+    .container {
+        width: 100%;
+    }
+
+}
+
+/* Typography
+------------------------------------------------------------ */
+
+body,
+p,
+select,
+textarea {
+	color: #fff;
+	font-family: 'Montserrat', Arial, sans-serif;
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 1.8;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	-webkit-text-size-adjust: 100%;
+	-webkit-font-smoothing: antialiased
+}
+
+h1,h2,h3,h4,h5,h6 {
+	color: #fff;
+	line-height: 1.5;
+	margin-top: 0;
+	margin-bottom: 24px;
+	font-weight: 700;
+}
+
+h1 { font-size: 24px; color: #00B4FA; font-weight: 300; margin-bottom: 0;}
+h2 { font-size: 34px; }
+h3 { font-size: 24px; color: #00B4FA; font-weight: 300; margin-bottom: 0px; }
+h4 { font-size: 17px; color: #00B4FA; font-weight: 400; }
+h5 { font-size: 11px; color: #00B4FA; text-transform: uppercase; letter-spacing: 2.75px; font-weight: 700; margin-bottom: 0; }
+
+strong, b {
+	font-weight: 700;
+}
+
+*,
+*:focus {
+	outline: none!important;
+}
+
+/* Hyperlinks
+------------------------------------------------------------ */
+
+a {
+	color: #0091B5;
+	-webkit-transition: all .15s ease-in-out;
+	-moz-transition: all .15s ease-in-out;
+	-ms-transition: all .15s ease-in-out;
+	-o-transition: all .15s ease-in-out;
+	transition: all .15s ease-in-out;
+}
+	a:hover {
+		color: #0091B5;
+	}
+
+/* General
+------------------------------------------------------------ */
+
+/* Vertical align */
+.valign-parent {
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+
+	.valign {
+		position: relative;
+		top: 50%;
+		-webkit-transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+		transform: translateY(-50%);
+	}
+
+.row-padding-large {
+	padding-top: 48px;
+	padding-bottom: 48px;
+}
+
+@media only screen and (max-width : 935px ) {
+
+	.row-padding-large {
+		padding-top: 24px;
+		padding-bottom: 24px;
+	}
+
+}
+
+/* Chart container
+------------------------------------------------------------ */
+
+#chartContainer {
+	position: relative;
+	width: 100%;
+	margin-bottom: 46px;
+}
+
+	.switch-holder {
+		position: relative;
+		z-index: 10;
+		text-align: center;
+		margin-bottom: 46px;
+	}
+
+	.switch {
+		position: relative;
+		width: auto;
+		display: inline-block;
+		margin: 10px auto;
+		font-family: verdana;
+	}
+	.switch:before {
+		content: ' ';
+		position: absolute;
+		left: 0;
+		z-index: -1;
+		width: 100%;
+		height: 32px;
+		background: rgba(2552,255,255,0.1);
+		border-radius: 32px;
+	}
+	.switch__label {
+		display: inline-block;
+		width: 82px;
+		font-family: milibus, arial;
+		color: rgba(126,127,139,0.5);
+		font-size: 17px;
+		padding: 2px 20px;
+		text-align: center;
+		cursor: pointer;
+		transition: color 200ms ease-out;
+	}
+	.switch__label:hover {
+		color: #00B4FA;
+	}
+	.switch__indicator {
+		width: 82px;
+		height: 32px;
+		position: absolute;
+		z-index: -1;
+		top: 0;
+		left: 0;
+		background: #fff;
+		border-radius: 32px;
+		transition: transform 600ms cubic-bezier(0.02, 0.94, 0.09, 0.97);
+		transform: translate3d(0, 0, 0);
+		-moz-box-shadow: 0 3px 10px 0 rgba(53, 42, 104, 0.1);
+		-webkit-box-shadow: 0 3px 10px 0 rgba(53, 42, 104, 0.1);
+		box-shadow: 0 3px 10px 0 rgba(53, 42, 104, 0.1);
+	}
+	.switch input#one:checked ~ .switch__label_one { color: #00B4FA; font-weight: 700; }
+	.switch input#two:checked ~ .switch__label_two { color: #00B4FA; font-weight: 700; }
+	.switch input#three:checked ~ .switch__label_three { color: #00B4FA; font-weight: 700; }
+	.switch input#one:checked ~ .switch__indicator { transform: translate3d(0, 0, 0); }
+	.switch input#two:checked ~ .switch__indicator { transform: translate3d(88px, 0, 0); }
+	.switch input#three:checked ~ .switch__indicator { transform: translate3d(176px, 0, 0); }
+	.switch input[type="radio"]:not(:checked),
+	.switch input[type="radio"]:checked { display: none; }
+
+	.counter-block {
+		position: relative;
+		background-color: rgba(0,0,0,0.3);
+		height: 220px;
+		text-align: center;
+		-moz-border-radius: 3px;
+		-webkit-border-radius: 3px;
+		border-radius: 3px;
+		overflow: hidden;
+	}
+
+		.counter-number {
+			display: inline-block;
+			position: relative;
+			font-family: milibus, arial;
+			line-height: 1;
+			color: #00B4FA;
+		}
+
+			.counter-number .number {
+				font-size: 96px;
+				font-weight: 700;
+			}
+
+			.counter-number .total {
+				display: inline-block;
+				width: 70px;
+				text-align: left;
+				position: absolute;
+				right: -75px;
+				top: 30px;
+				font-size: 32px;
+				opacity: 0.5;
+			}
+
+		.counter-block h4 {
+			position: absolute;
+			bottom: 0;
+			font-size: 17px;
+			line-height: 1em;
+			width: 100%;
+		}
+
+	#chartContainer canvas#c{
+	    position: absolute;
+	    z-index: -1;
+	    bottom: 100px;
+	    left: 0;
+
+	    /* force fix height */
+	    width: 100% !important;
+	    max-width: 100%;
+	    height: 400px !important;
+	}
+
+	@media only screen and (max-width : 1160px ) {
+
+		#chartContainer {
+			margin-bottom: 48px;
+		}
+
+		.counter-block {
+			height: 164px;
+		}
+
+		.counter-number .number {
+			font-size: 46px;
+		}
+
+		.counter-number .total {
+			top: 15px;
+			font-size: 22px;
+		}
+
+		#chartContainer canvas#c {
+			 bottom: 0;
+		}
+
+	}
+
+	@media only screen and (max-width : 768px ) {
+
+		.couter-col {
+			margin-bottom: 15px;
+		}
+
+		#chartContainer canvas#c {
+			 bottom: 190px;
+		}
+
+	}
+
+	@media only screen and (max-width : 600px ) {
+
+		.couter-col {
+			width: 100%;
+			margin-bottom: 15px;
+		}
+
+		.counter-block {
+			height: 80px;
+		}
+
+		.counter-number {
+			position: absolute;
+			right: 50px;
+		}
+
+		.counter-number .number {
+			font-size: 36px;
+		}
+
+		.counter-number .total {
+			top: 10px;
+			font-size: 18px;
+		}
+
+		.counter-block h4 {
+			position: absolute;
+			margin-bottom: 0;
+			left: 15px;
+			font-size: 12px;
+			width: auto;
+			bottom: auto;
+			top: 50%;
+			-webkit-transform: translateY(-50%);
+			-ms-transform: translateY(-50%);
+			transform: translateY(-50%);
+		}
+
+		#chartContainer canvas#c {
+			 bottom: 200px;
+		}
+
+	}

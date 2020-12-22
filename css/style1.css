@@ -1,0 +1,12 @@
+html, body{
+  margin: 0;
+}
+
+.main{
+  margin-bottom:-550px;
+}
+
+iframe{
+  width: 100%;
+  height: 500px;
+}

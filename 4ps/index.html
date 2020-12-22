@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>4ps</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<header id="home" class="site-header">
+
+    <div class="container">
+
+			<div class="row row-padding-large">
+
+				<div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1 text-center">
+
+					<div id="header-content">
+
+						<h1>4ps Beneficiaries</h1>
+						<h2>Show results the 4ps beneficiaries in every Purok around Mati San Miguel Zamboange del Sur</h2>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</header>
+
+	<div id="chartContainer">
+
+		<div class="switch-holder">
+
+			<h5>Years</h5>
+
+			<div class="switch">
+				<input name="switch" id="one" type="radio" value="2015" />
+				<label for="one" class="switch__label switch__label_one">2015</label>
+				<input name="switch" id="two" type="radio" value="2016" />
+				<label for="two" class="switch__label switch__label_two">2016</label>
+				<input name="switch" id="three" type="radio" value="2017" checked/>
+				<label for="three" class="switch__label switch__label_three">2017</label>
+				<div class="switch__indicator" /></div>
+			</div>
+
+		</div>
+
+		<div class="container">
+			<div class="row row-padding-large">
+
+				<div class="col-xs-6 col-sm-3 col-md-3 couter-col">
+					<div class="counter-block valign-parent">
+
+						<div class="counter-number valign">
+							<span id="fourthNr" class="number" rel="95">95</span>
+							<span class="total">%</span>
+						</div>
+
+						<h4>Percentage</h4>
+					</div>
+				</div>
+
+				<div class="col-xs-6 col-sm-3 col-md-3 couter-col">
+					<div class="counter-block valign-parent">
+
+						<div class="counter-number valign">
+							<span id="thirdNr" class="number" rel="90">2</span>
+							<span class="total">/5</span>
+						</div>
+
+						<h4>Purok 2</h4>
+					</div>
+				</div>
+
+				<div class="col-xs-6 col-sm-3 col-md-3 couter-col">
+					<div class="counter-block valign-parent">
+
+						<div class="counter-number valign">
+							<span id="secondNr" class="number" rel="90">3</span>
+							<span class="total">/5</span>
+						</div>
+
+						<h4>Purok 1</h4>
+					</div>
+				</div>
+
+				<div class="col-xs-6 col-sm-3 col-md-3 couter-col">
+					<div class="counter-block valign-parent">
+
+						<div class="counter-number valign">
+							<span id="firstNr" class="number" rel="90">2</span>
+							<span class="total">/5</span>
+						</div>
+
+						<h4>Purok 6</h4>
+					</div><br>
+				</div>
+
+
+			</div>
+		</div>
+
+		<canvas id="c" width="1000" height="400"></canvas>
+
+	</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.6/Chart.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
